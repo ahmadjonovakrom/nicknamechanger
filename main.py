@@ -6,17 +6,32 @@ from telethon.tl.functions.account import UpdateProfileRequest
 # ======================
 # ENV VARIABLES
 # ======================
-api_id = int(os.getenv("API_ID"))
-api_hash = os.getenv("API_HASH")
+api_id = 38763213
+api_hash = "8094774228d8613c4078b6dd480a72f2"
 
 # ======================
 # NICKNAMES LIST
 # ======================
 names = [
-    "Akrom ⚡",
-    "Akrom 🚀",
-    "Akrom 🔥",
-    "Akrom 👑"
+    "Ahmadjonov",
+    "Mm",
+    "Indepented developer",
+    "Shirmoynon",
+    "Blacky",
+    "Supervisor",
+    "Mark",
+    ".",
+    "..",
+    "Hey bro",
+    "udkm",
+    "I love my mom",
+    "Not from the moon",
+    "Shunchaki",
+    "Dave Jones",
+    "Mr Jones",
+    "Money maker",
+    "Chamomile tea",
+    "Little dreamer",
 ]
 
 # ======================
@@ -25,7 +40,7 @@ names = [
 client = TelegramClient("session", api_id, api_hash)
 
 async def main():
-    await client.start()
+    await client.connect()
 
     print("Bot started successfully!")
 
